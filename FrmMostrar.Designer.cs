@@ -99,6 +99,7 @@
             this.btnPromedio.TabIndex = 3;
             this.btnPromedio.Text = "Promedio de temperatura";
             this.btnPromedio.UseVisualStyleBackColor = true;
+            this.btnPromedio.Click += new System.EventHandler(this.btnPromedio_Click);
             // 
             // FrmMostrar
             // 

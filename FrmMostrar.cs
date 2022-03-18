@@ -99,5 +99,16 @@ namespace temperaturaDepartamentos
             mostrar = mostrar.OrderBy(t => t.temperatura).ToList();
             cargarVista();
         }
+
+        private void btnPromedio_Click(object sender, EventArgs e)
+        {
+            double contador = 0;
+            foreach (var i in mostrar)
+            {
+                contador += Convert.ToInt16(i.temperatura);
+            }
+            double promedio = contador / mostrar.Count;
+            MessageBox.Show("Promedio de la Temperatura: " + promedio + " grados");
+        }
     }
 }
