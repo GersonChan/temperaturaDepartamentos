@@ -87,5 +87,17 @@ namespace temperaturaDepartamentos
 
             reader.Close();
         }
+
+        private void temperaturaMasAltaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mostrar = mostrar.OrderByDescending(t => t.temperatura).ToList();
+            cargarVista();
+        }
+
+        private void temperaturaMasBajaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mostrar = mostrar.OrderBy(t => t.temperatura).ToList();
+            cargarVista();
+        }
     }
 }

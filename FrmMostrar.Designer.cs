@@ -81,12 +81,14 @@
             this.temperaturaMasAltaToolStripMenuItem.Name = "temperaturaMasAltaToolStripMenuItem";
             this.temperaturaMasAltaToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.temperaturaMasAltaToolStripMenuItem.Text = "Temperatura mas alta";
+            this.temperaturaMasAltaToolStripMenuItem.Click += new System.EventHandler(this.temperaturaMasAltaToolStripMenuItem_Click);
             // 
             // temperaturaMasBajaToolStripMenuItem
             // 
             this.temperaturaMasBajaToolStripMenuItem.Name = "temperaturaMasBajaToolStripMenuItem";
             this.temperaturaMasBajaToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.temperaturaMasBajaToolStripMenuItem.Text = "Temperatura mas baja";
+            this.temperaturaMasBajaToolStripMenuItem.Click += new System.EventHandler(this.temperaturaMasBajaToolStripMenuItem_Click);
             // 
             // btnPromedio
             // 
