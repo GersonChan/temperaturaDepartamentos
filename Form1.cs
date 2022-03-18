@@ -75,7 +75,7 @@ namespace temperaturaDepartamentos
             while (reader.Peek() > -1)
             {
                 Departamento departamentoTemp = new Departamento();
-                departamentoTemp.nombre = reader.ReadLine();
+                departamentoTemp.noIdentificacion = reader.ReadLine();
                 departamentoTemp.nombre = reader.ReadLine();
                 
                 departamentos.Add(departamentoTemp);
@@ -88,6 +88,12 @@ namespace temperaturaDepartamentos
         {
             Leer("departamentos.txt");
             CargarComboBox();
+        }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            FrmMostrar mostrar = new FrmMostrar();
+            mostrar.Show();
         }
     }
 }
